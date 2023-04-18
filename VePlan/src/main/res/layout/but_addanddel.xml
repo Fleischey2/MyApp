@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/but_adddel"
+    android:layout_width="match_parent"
+    android:layout_height="59dp">
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="addIngr"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:translationX="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/del_button"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="delIngr"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:translationX="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

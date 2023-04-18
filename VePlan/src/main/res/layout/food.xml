@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_cal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D9C0"
+    android:backgroundTint="#B1D9C0"
+    android:backgroundTintMode="src_in"
+    android:visibility="visible"
+    tools:context=".calenderActivity">
+
+    <FrameLayout
+        android:layout_width="59dp"
+        android:layout_height="69dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064">
+
+        <Button
+            android:id="@+id/but_test"
+            android:layout_width="56dp"
+            android:layout_height="66dp"
+            android:backgroundTint="@color/white"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="16dp"
+            android:layout_height="14dp"
+            android:translationX="2dp"
+            android:translationY="44dp"
+            android:translationZ="3dp"
+            app:srcCompat="@drawable/einkaufsliste" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="13dp"
+            android:layout_height="14dp"
+            android:translationX="41dp"
+            android:translationY="45dp"
+            android:translationZ="3dp"
+            app:srcCompat="@drawable/batter" />
+
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="389dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

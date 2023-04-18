@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1D9C0"
+    android:backgroundTint="#B1D9C0"
+    android:backgroundTintMode="src_in"
+    android:visibility="visible"
+    tools:context=".recipesActivity">
+
+    <ScrollView
+        android:layout_width="384dp"
+        android:layout_height="673dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#10000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/important"
+        android:layout_width="368dp"
+        android:layout_height="657dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ue_recipes"
+                android:layout_width="163dp"
+                android:layout_height="46dp"
+                android:text="Rezeptliste"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.078"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.026" />
+
+            <ScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="308dp"
+                android:layout_height="517dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ue_recipes"
+                app:layout_constraintVertical_bias="0.217">
+
+                <LinearLayout
+                    android:id="@+id/rec_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/but_add_rec"
+                android:layout_width="50dp"
+                android:layout_height="59dp"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="addBut"
+                android:text="+"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:translationX="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="OnClick" />
+
+            <ToggleButton
+                android:id="@+id/but_del_rec"
+                android:layout_width="59dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:text="ToggleButton"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.855"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.564" />
+
+            <ImageView
+                android:id="@+id/im_trash"
+                android:layout_width="33dp"
+                android:layout_height="29dp"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.674"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.54"
+                app:srcCompat="@drawable/delete" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

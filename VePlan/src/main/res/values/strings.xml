@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VEPlan</string>
+    <string name="cal_button">Kalender</string>
+    <string name="recipe_button">Recipes</string>
+    <string name="food_button">Food</string>
+</resources>
